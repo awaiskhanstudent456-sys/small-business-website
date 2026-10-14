@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional website design and digital services for growing businesses.">
+  <title>Northstar Studio | Better Websites for Better Business</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">N</span>
+        Northstar Studio
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary nav-cta">Get a Free Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR LOCAL BUSINESS PARTNER</p>
+
+        <h1>A Better Website for a <span>Better Business.</span></h1>
+
+        <p class="hero-description">
+          We help ambitious small businesses build a stronger online
+          presence with beautiful websites and thoughtful digital solutions.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+
+        <div class="trust-row">
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            Professional design
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            Mobile-friendly
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
+          alt="Bright, modern professional business workspace"
+        >
+        <div class="image-note">
+          <span class="note-icon">✦</span>
+          <div>
+            <strong>Built for growth</strong>
+            <p>Designed around your business</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT WE DO</p>
+          <h2>Everything Your Business Needs to Grow</h2>
+          <p>Practical digital services designed to help your business stand out.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">✳</div>
+            <h3>Website Design</h3>
+            <p>Modern, responsive websites that make a great first impression.</p>
+            <a href="#contact" class="text-link">Learn more →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">◇</div>
+            <h3>Business Branding</h3>
+            <p>Consistent visuals and a clear identity your customers remember.</p>
+            <a href="#contact" class="text-link">Learn more →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">↗</div>
+            <h3>Digital Support</h3>
+            <p>Reliable website updates and practical help as your business grows.</p>
+            <a href="#contact" class="text-link">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about-inner">
+        <div>
+          <p class="eyebrow">A PARTNER YOU CAN TRUST</p>
+          <h2>Small Business Goals. Thoughtful Digital Solutions.</h2>
+        </div>
+        <div>
+          <p>
+            Every business has a story worth sharing. Our approach combines
+            clean design, clear communication and user-friendly experiences
+            to help your business connect with the right people.
+          </p>
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CLIENT FEEDBACK</p>
+          <h2>Built on Good Relationships</h2>
+          <p>Clear communication and thoughtful work make a difference.</p>
+        </div>
+
+        <article class="review-card">
+          <div class="review-stars" aria-label="Five stars">★★★★★</div>
+          <blockquote>
+            “The process was clear, the design felt professional,
+            and everything was easy to navigate.”
+          </blockquote>
+          <p class="review-author">Sample testimonial</p>
+          <p class="review-caption">Replace with a real client review before publishing.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container contact-inner">
+        <div class="contact-copy">
+          <p class="eyebrow">LET'S WORK TOGETHER</p>
+          <h2>Ready to Build Something Better?</h2>
+          <p>Tell us a little about your project. Let's explore what's possible.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text"
+            placeholder="Enter your name" required>
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email"
+            placeholder="you@example.com" required>
+
+          <label for="message">Tell us about your project</label>
+          <textarea id="message" name="message" rows="4"
+            placeholder="What do you have in mind?" required></textarea>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Send Message
+          </button>
+          <p class="form-note" id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">N</span>
+        Northstar Studio
+      </a>
+      <p>Helping small businesses make a strong first impression.</p>
+      <p>© <span id="year"></span> Northstar Studio. Portfolio demo.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
